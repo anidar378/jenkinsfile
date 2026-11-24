@@ -1,0 +1,23 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') {
+            steps {
+                echo 'Connected to GitHub!'
+            }
+        }
+
+        stage('Build') {
+            steps {
+                echo 'Building project...'
+            }
+        }
+
+        stage('Success') {
+            steps {
+                echo 'Pipeline completed successfully!'
+            }
+        }
+    }
+}
